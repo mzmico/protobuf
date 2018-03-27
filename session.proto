@@ -1,0 +1,23 @@
+syntax = "proto3";
+package mzmico.protobuf;
+
+option go_package = "github.com/mzmico/protobuf";
+message Session {
+    string device_id = 1;
+    string platform = 2;
+    string version = 3;
+    string describe = 4;
+    string os = 5;
+    string trace_id = 6;
+    string time_stamp = 7;
+    string token = 8;
+    string uid = 9;
+    string account = 10;
+    string net = 11;
+    string from = 12;
+}
+
+enum State {
+    OK = 0;
+    ArgumentError = 1;
+}
