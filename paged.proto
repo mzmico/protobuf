@@ -1,0 +1,9 @@
+syntax = "proto3";
+package mzmico.protobuf;
+
+option go_package = "github.com/mzmico/protobuf";
+
+message Paged {
+    int32 from = 1;
+    int32 size = 2;
+}
